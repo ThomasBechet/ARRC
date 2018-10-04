@@ -70,7 +70,10 @@ public class MainActivity extends AppCompatActivity {
         mdroite = findViewById(R.id.droite);
         mBTArrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1);
         mBTAdapter = BluetoothAdapter.getDefaultAdapter(); // get a handle on the bluetooth radio
-
+        mhaut.setVisibility(View.GONE);
+        mbas.setVisibility(View.GONE);
+        mdroite.setVisibility(View.GONE);
+        mgauche.setVisibility(View.GONE);
         mDevicesListView = (ListView)findViewById(R.id.devicesListView);
         mDevicesListView.setAdapter(mBTArrayAdapter); // assign model to view
         mDevicesListView.setOnItemClickListener(mDeviceClickListener);
