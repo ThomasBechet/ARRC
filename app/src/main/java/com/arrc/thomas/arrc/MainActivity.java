@@ -113,13 +113,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+            //show the device
             mListPairedDevicesBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v){
                     listPairedDevices(v);
                 }
             });
+
+            //ignore
             mhaut.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v){
@@ -127,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
                         mConnectedThread.write("1");
                 }
             });
+            //ignore
             mbas.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v){
@@ -134,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
                         mConnectedThread.write("2");
                 }
             });
+            //ignore
             mdroite.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v){
@@ -141,6 +145,7 @@ public class MainActivity extends AppCompatActivity {
                         mConnectedThread.write("3");
                 }
             });
+            //ignore
             mgauche.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v){
